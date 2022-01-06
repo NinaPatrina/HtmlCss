@@ -1,0 +1,73 @@
+.main{
+    background-color: #eee;
+}
+.form-group {
+    width: 400px;
+    margin: 5px auto 5px auto;
+  }
+  h1{
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      color: #e70476;
+      margin: 30px auto 20px auto;
+  }
+
+  .introduction{
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    color: #530727;
+    margin: 50px auto 30px auto;
+  }
+  h2{
+      font-weight: normal;
+      font-style: oblique;
+      font-size: 25px;
+      text-align: center;
+      color: #540e70;
+      margin: 50px auto 30px auto;
+  }
+  .label1{
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    color: #410e3c;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    margin-right:20px;
+  }
+  .questionaire{
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    color: #110108;
+    margin-left: 400px;
+    margin-right:400px;
+    border: 10px solid rgb(136, 114, 145);
+    margin-bottom: 5px;
+  }
+  h3{
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      color: #3c1470;
+      margin-bottom: 30px;
+      margin-top:50px;
+  }
+  .list{
+      border: 10px solid red;
+      background-color: #eee;
+      margin: 10px auto 20px auto;
+  }
+  .list div{
+      margin: 20px;
+      padding: 10px;
+      border: 10px solid green;
+  }
+
+  .btn btn-primary{
+      color: rgb(155, 8, 8);
+      text-align: center;
+      margin: 10px auto 20px auto;
+  }
