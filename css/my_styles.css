@@ -1,16 +1,50 @@
-.main{
-    background-color: #eee;
+@font-face {
+    font-family: 'Nina style';
+    src: url('fonts/PlayfairDisplay-Italic.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapper{
+    position:relative;
+    top:0;
+    text-align:center;
+
+}
+.main{    background-color: #eee;
 }
 .form-group {
     width: 400px;
     margin: 5px auto 5px auto;
+
   }
+.top_menu {
+    position: fixed;
+    top:0;
+    left:200px;
+    display:flex;
+    width: 1300px;
+    height: 90px;
+    background-color: rosybrown;
+    font-family: 'Luxurious Roman', cursive;
+
+}
+.top_menu > div {
+    border:3px solid purple;
+    width:20%;
+    top:0;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #400a64;
+}
+
   h1{
       font-weight: bold;
       font-size: 40px;
       text-align: center;
       color: #e70476;
-      margin: 30px auto 20px auto;
+      margin: 200px auto 30px auto;
+      font-family: 'Luxurious Roman', cursive;
   }
 
   .introduction{
@@ -19,6 +53,7 @@
     text-align: center;
     color: #530727;
     margin: 50px auto 30px auto;
+    font-family: 'Luxurious Roman', cursive;
   }
   h2{
       font-weight: normal;
@@ -32,10 +67,11 @@
     font-weight: normal;
     font-size: 25px;
     text-align: center;
-    color: #410e3c;
+    color: #da1a3a;
     margin-left: 400px;
     margin-bottom: 20px;
     margin-right:20px;
+    font-family: 'Nina style';
   }
   .questionaire{
     font-weight: normal;
@@ -46,6 +82,7 @@
     margin-right:400px;
     border: 10px solid rgb(136, 114, 145);
     margin-bottom: 5px;
+    font-family: 'Nina style';
   }
   h3{
       font-weight: bold;
@@ -64,6 +101,10 @@
       margin: 20px;
       padding: 10px;
       border: 10px solid green;
+  }
+  .table{
+    font-family: 'Nina style';
+    font-size: 18px;
   }
 
   .btn btn-primary{
