@@ -12,7 +12,7 @@
         <div class = "introduction">
           <div>We will help you to choose dishes and to buy the right ingridients.</div>
           <div>You will save time and money with us.</div>
-        <<img src="gif/cute-cat-chef-cooking-cartoon-icon-illustration_138676-2257.webp" id="img_cat">
+        <img src="gif/cute-cat-chef-cooking-cartoon-icon-illustration_138676-2257.webp" id="img_cat">
         </div>
         <div class = "top_menu">
           <img src="gif/cartoon-cute-girl-cat-cooking-vector_39961-870.webp" alt="logo" > <div>main</div><div>login</div><div>about us</div><div>subscribe</div>
@@ -70,7 +70,7 @@
             </tbody>
         </table>
         <table class="table table-dark table-sm table-striped table-bordered border-primary">
-          <h3>Here is the list of the ingridients you will have to buy:</h3>
+          <h3>Here is the list of the ingridients you will have to buy</h3>
           <thead>
               <tr ><th>Day of the week</th><th>Fruits</th><th>Vegetables</th><th>Meet</th><th>Diary</th></tr>
           </thead>
@@ -85,12 +85,54 @@
             <tr><th>Total</th><th></th><th></th><th></th><th></th></tr>
           </tfoot>
       </table>
+      <table id="calories" class="table table-dark table-sm table-striped table-bordered border-primary">
+        <h3>Calories</h3>
+        <thead>
+            <tr ><th>Day of the week</th><th>1</th><th>Vegetables</th><th>Meet</th><th>Diary</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr><th>Total</th><th></th><th></th><th></th><th></th></tr>
+        </tfoot>
+       </table>
         <form>
             <div>
-              <div>You can leave your comment here:</div>
+              <div>You can leave your comment here</div>
               <textarea text="comment" style="width: 500px; height: 100px; margin-left: 100px;"></textarea>
             </div>
         </form>
+        <script>
+
+          function readTextFile(file, callback) {
+              var rawFile = new XMLHttpRequest();
+              alert("in read");
+              rawFile.overrideMimeType("FoodData/json");
+              rawFile.open("GET", file, true);
+              rawFile.onreadystatechange = function() {
+                  alert("read callback");
+                  if (rawFile.readyState === 4 && rawFile.status == "200") {
+                      alert("read is good");
+                      callback(rawFile.responseText);
+                  }
+              }
+              rawFile.send(null);
+          }
+          readTextFile("FoodData.json", function(text){
+              var data = JSON.parse(text);
+              let content = "";
+
+              for (let product of data)
+              {
+              content+="<tr><td>1</td><td>2</td><td>B</td><td>Chicken</td><td>Milk</td></tr>"
+              }
+              console.log(data);
+              document.querySelector("#calories tbody").innerHTML = content;
+          });
+
+
+
+        </script>
       </div>
     </body>
 </html>
