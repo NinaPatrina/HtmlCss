@@ -103,35 +103,13 @@
             </div>
         </form>
         <script>
-
-          function readTextFile(file, callback) {
-              var rawFile = new XMLHttpRequest();
-              alert("in read");
-              rawFile.overrideMimeType("FoodData/json");
-              rawFile.open("GET", file, true);
-              rawFile.onreadystatechange = function() {
-                  alert("read callback");
-                  if (rawFile.readyState === 4 && rawFile.status == "200") {
-                      alert("read is good");
-                      callback(rawFile.responseText);
-                  }
+          fetch("FoodData.json").then(response=>response.json()).then(data=>{
+            let content = "";
+            for (let product of data)
+            {
+              content+='<tr><td>${product.FoundationFoods.description}</td><td></td><td>B</td><td>Chicken</td><td>Milk</td></tr>'
               }
-              rawFile.send(null);
-          }
-          readTextFile("FoodData.json", function(text){
-              var data = JSON.parse(text);
-              let content = "";
-
-              for (let product of data)
-              {
-              content+="<tr><td>1</td><td>2</td><td>B</td><td>Chicken</td><td>Milk</td></tr>"
-              }
-              console.log(data);
-              document.querySelector("#calories tbody").innerHTML = content;
-          });
-
-
-
+              document.querySelector("#calories tbody").innerHTML = content;})
         </script>
       </div>
     </body>
