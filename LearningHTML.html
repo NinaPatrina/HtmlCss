@@ -15,8 +15,8 @@
         <img src="gif/cute-cat-chef-cooking-cartoon-icon-illustration_138676-2257.webp" id="img_cat">
         </div>
         <div class = "top_menu">
-          <img src="gif/cartoon-cute-girl-cat-cooking-vector_39961-870.webp" alt="logo" > <div>main</div><div>login</div><div>about us</div><div>subscribe</div>
-          </div>
+          <img src="gif/cartoon-cute-girl-cat-cooking-vector_39961-870.webp" alt="logo"><div>main</div><div>login</div><div>about us</div><div>subscribe</div>
+        </div>
         <h2>First please login</h2>
         <form class ="my-form" method = "GET">
             <div class="form-group">
@@ -51,7 +51,7 @@
               </div><div class="questionaire">
                 <input type="radio" name="answer">Vegetables
               </div><div class="questionaire">
-                <input type="radio" name="answer">Bread
+                <input type="radio" name="answer">Bread a
               </div>
               <button type="submit" class="btn btn-primary">I'm ready to get my menu</button>
 
@@ -59,6 +59,7 @@
         <table class="table table-dark table-striped table-bordered border-primary">
             <h3>Here is your menu for this week</h3>
             <thead>
+
                 <tr ><th>Day of the week</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th></tr>
             </thead>
             <tbody>
@@ -88,14 +89,11 @@
       <table id="calories" class="table table-dark table-sm table-striped table-bordered border-primary">
         <h3>Calories</h3>
         <thead>
-            <tr ><th>Day of the week</th><th>1</th><th>Vegetables</th><th>Meet</th><th>Diary</th></tr>
+            <tr ><th>Product name</th><th>Calories</th><th>Food Portion</th><th>Weight in gramms</th></tr>
         </thead>
         <tbody>
         </tbody>
-        <tfoot>
-          <tr><th>Total</th><th></th><th></th><th></th><th></th></tr>
-        </tfoot>
-       </table>
+        </table>
         <form>
             <div>
               <div>You can leave your comment here</div>
@@ -107,7 +105,7 @@
             let content = "";
             for (let product of data)
             {
-              content+='<tr><td>${product.FoundationFoods.description}</td><td></td><td>B</td><td>Chicken</td><td>Milk</td></tr>'
+              content+=`<tr><td>${product.description}</td><td>${product.foodNutrients[0].amount}</td><td>${product.foodPortions[0]?product.foodPortions[0].measureUnit.name:''}</td><td>${product.foodPortions[0]?product.foodPortions[0].gramWeight:''}</td></tr>`
               }
               document.querySelector("#calories tbody").innerHTML = content;})
         </script>

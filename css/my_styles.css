@@ -1,124 +1,123 @@
 @font-face {
-    font-family: 'Nina style';
-    src: url('fonts/PlayfairDisplay-Italic.woff2') format("woff2");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Nina style";
+  src: url("fonts/PlayfairDisplay-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-.wrapper{
-    position:relative;
-    top:0;
-    text-align:center;
-
+.wrapper {
+  position: relative;
+  top: 0;
+  text-align: center;
 }
-.main{    background-color: #eee;
+.main {
+  background-color: #eee;
 }
 .form-group {
-    width: 400px;
-    margin: 5px auto 5px auto;
-
-  }
+  width: 400px;
+  margin: 5px auto 5px auto;
+}
 .top_menu {
-    position: fixed;
-    top:0;
-    left:200px;
-    display:flex;
-    width: 1300px;
-    height: 90px;
-    background-color: rosybrown;
-    font-family: 'Luxurious Roman', cursive;
-    border:3px solid purple;
-
-
+  position: fixed;
+  top: 0;
+  left: 100px;
+  display: flex;
+  width: 1300px;
+  height: 90px;
+  background-color: rgb(177, 123, 123);
+  font-family: "Luxurious Roman", cursive;
+  border: 3px solid purple;
 }
 .top_menu > div {
-    border:3px solid purple;
-    width:25%;
-    top:0;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    color: #400a64;
+  left: 10px;
+  border: 3px solid purple;
+  width: 25%;
+  top: 0;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #400a64;
 }
-#img_cat{
-    position:absolute;
-    top:535px; left:170px; width:200px; height:200px
+#img_cat {
+  position: absolute;
+  top: 535px;
+  left: 170px;
+  width: 200px;
+  height: 200px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #e70476;
+  margin: 200px auto 30px auto;
+  font-family: "Luxurious Roman", cursive;
 }
 
-  h1{
-      font-weight: bold;
-      font-size: 40px;
-      text-align: center;
-      color: #e70476;
-      margin: 200px auto 30px auto;
-      font-family: 'Luxurious Roman', cursive;
-  }
+.introduction {
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  color: #530727;
+  margin: 50px auto 30px auto;
+  font-family: "Luxurious Roman", cursive;
+}
+h2 {
+  font-weight: normal;
+  font-style: oblique;
+  font-size: 25px;
+  text-align: center;
+  color: #540e70;
+  margin: 50px auto 30px auto;
+}
+.label1 {
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  color: #da1a3a;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-family: "Nina style";
+}
+.questionaire {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #110108;
+  margin-left: 400px;
+  margin-right: 400px;
+  border: 10px solid rgb(136, 114, 145);
+  margin-bottom: 5px;
+  font-family: "Nina style";
+}
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  color: #3c1470;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.list {
+  border: 10px solid red;
+  background-color: #eee;
+  margin: 10px auto 20px auto;
+}
+.list div {
+  margin: 20px;
+  padding: 10px;
+  border: 10px solid green;
+}
+.table {
+  font-family: "Nina style";
+  font-size: 18px;
+}
 
-  .introduction{
-    font-weight: normal;
-    font-size: 25px;
-    text-align: center;
-    color: #530727;
-    margin: 50px auto 30px auto;
-    font-family: 'Luxurious Roman', cursive;
-  }
-  h2{
-      font-weight: normal;
-      font-style: oblique;
-      font-size: 25px;
-      text-align: center;
-      color: #540e70;
-      margin: 50px auto 30px auto;
-  }
-  .label1{
-    font-weight: normal;
-    font-size: 25px;
-    text-align: center;
-    color: #da1a3a;
-    margin-left: 400px;
-    margin-bottom: 20px;
-    margin-right:20px;
-    font-family: 'Nina style';
-  }
-  .questionaire{
-    font-weight: normal;
-    font-size: 20px;
-    text-align: left;
-    color: #110108;
-    margin-left: 400px;
-    margin-right:400px;
-    border: 10px solid rgb(136, 114, 145);
-    margin-bottom: 5px;
-    font-family: 'Nina style';
-  }
-  h3{
-      font-weight: bold;
-      font-size: 25px;
-      text-align: center;
-      color: #3c1470;
-      margin-bottom: 30px;
-      margin-top:50px;
-  }
-  .list{
-      border: 10px solid red;
-      background-color: #eee;
-      margin: 10px auto 20px auto;
-  }
-  .list div{
-      margin: 20px;
-      padding: 10px;
-      border: 10px solid green;
-  }
-  .table{
-    font-family: 'Nina style';
-    font-size: 18px;
-  }
-
-  .btn.btn-primary{
-      color: rgb(10, 5, 5);
-      background-color: #e70476;
-      text-align: center;
-      font-weight: bold;
-      margin: 10px auto 20px auto;
-      margin-left: 400px;
-
-  }
+.btn.btn-primary {
+  color: rgb(10, 5, 5);
+  background-color: #e70476;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto 20px auto;
+  margin-left: 400px;
+}
